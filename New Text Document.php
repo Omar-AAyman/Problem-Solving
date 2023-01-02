@@ -68,19 +68,30 @@
 // //     $categories['subCategories']['apple'][1]->colors[1]->secondaryColors[0] . ',' .
 // //     $categories['subCategories']['apple'][1]->colors[1]->secondaryColors[1];
 
-$arr = [2, 4, 7, 9, 1];
-$number = 0;
-for ($i = 0; $i < count($arr); $i++) {
-    $number = 0;
-    for ($n = 0; $n < count($arr); $n++) {
+// $arr = [2, 4, 7, 9, 1];
+// $number = 0;
+// for ($i = 0; $i < count($arr); $i++) {
+//     $number = 0;
+//     for ($n = 0; $n < count($arr); $n++) {
 
-        $number = $number + $arr[$n];
+//         $number = $number + $arr[$n];
+//     }
+//     $arr2[$i] = $number - $arr[$i];
+//     // print_r($arr2) ;
+//     // $
+
+
+// }
+// echo max($arr2)."<br>". min($arr2);
+// // echo $number;
+
+$candels = [5, 5, 5,5, 5,5];
+$result = 0;
+// echo max($candels);
+for ($i = 0; $i < count($candels); $i++) {
+
+    if ($candels[$i] == max($candels)) {
+        $result += 1;
     }
-    $arr2[$i] = $number - $arr[$i];
-    // print_r($arr2) ;
-    // $
-    
-
 }
-echo max($arr2)."<br>". min($arr2);
-// echo $number;
+echo $result;
