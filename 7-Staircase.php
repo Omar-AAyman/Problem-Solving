@@ -6,12 +6,12 @@
  * The function accepts INTEGER n as parameter.
  */
 
-function staircase($n) {
+// function staircase($n) {
     // Write your code here
     
     $space = " ";
     $hash = '#';
-    // $n = 6;
+    $n = 6;
     $k = 0;
     for ($i = ($n - 1); $i > -1; $i = $i - 1) {
 
@@ -28,11 +28,11 @@ function staircase($n) {
 
     }
 
-}
+// // }
 
-$n = intval(trim(fgets(STDIN)));
+// $n = intval(trim(fgets(STDIN)));
 
-staircase($n);
+// staircase($n);
 ?>
 <!-- 
 Staircase detail
