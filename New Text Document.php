@@ -85,12 +85,21 @@
 // echo max($arr2)."<br>". min($arr2);
 // // echo $number;
 
-$candels = [5, 5, 5,5, 5,5];
+$candels = [5, 1, 5,2, 1,5];
 $result = 0;
+$max = $candels[0];
 // echo max($candels);
+
+for ($j = 0; $j < count($candels); $j++) {
+
+    if ($candels[$j] > $max) {
+        $max = $candels[$j];
+    }
+}
+
 for ($i = 0; $i < count($candels); $i++) {
 
-    if ($candels[$i] == max($candels)) {
+    if ($candels[$i] == $max) {
         $result += 1;
     }
 }
